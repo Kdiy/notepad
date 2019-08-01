@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="notepad.css">
+	
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="notepad.js"></script>
+</head>
+<body>
+	<div id="test"></div>
+	<script type="text/javascript">
+		var notice=[
+			{"date":"2019-08-13","type":"yet","msg":"事件1"},
+			{"date":"2019-08-14","type":"full","msg":"事件2"},
+			{"date":"2019-08-15","type":"full","msg":"事件3"},
+			{"date":"2019-08-30","type":"full","msg":"事件4"}
+		]
+
+        $("#test").notePad('2019','08',notice);
+        var monthCN=['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'];
+		function getNoteMonth(d){
+			var year=$("[data-note='year']").text();
+			var month=parseInt(monthCN.indexOf($(d).text()))+1;
+			month=month.toString().length<2?'0'+month:month;
+			payback(year,month,year+'-'+month+'-01')
+		}
+		function getNoteYear(d,n){
+			var year=$("[data-note='year']").text();
+			var month=parseInt(monthCN.indexOf($("[data-note='month']").text()))+1;
+			month=month.toString().length<2?'0'+month:month;
+			payback(parseInt(year)+n,month,parseInt(year)+n+'-'+month+'-01');
+		}
+		function payback(year,month,date){
+			var res_data = notice
+			$("#test").notePad(year,month,res_data)
+		}
+	</script>
+</body>
+</html>

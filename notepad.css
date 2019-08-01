@@ -1,0 +1,161 @@
+.note-content{
+    margin-bottom: 30px;
+}
+.note-year-active,.note-month-active,.note-toolbar-radius{
+    display:inline-block;
+}
+.note-default-color{
+    color:#fa594c
+}
+.note-day-list .old{
+    color: #eee;
+}
+.note-dropdown-content{
+    display:none;
+    position: absolute;
+    width: 100px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 5px;
+    z-index: 2;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px #efefef;
+}
+.note-radius-group>.note-radius{
+    display: inline-block;
+}
+.note-toolbar span{
+    cursor:pointer;
+    padding: 0px 5px;
+}
+.note-toolbar{
+    background: #fff;
+    line-height: 30px;
+    box-shadow: 0 1px 10px rgb(229, 229, 229);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.note-month-list{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+.note-month-list>li{
+    /* padding: 5px 20px; */
+    border-bottom: 1px solid #ccc;
+    color:#fa594c;
+    cursor:pointer;
+}
+.note-header{
+    background: #fff;
+    margin-top: 1px;
+}
+.note-toolbar-radius{
+    float: right;
+    font-size: 12px;
+}
+.note-week-list{
+    list-style: none;
+    padding-left: 0;
+    display: inline-flex;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #f3f3f3;
+}
+.note-week-list>li{
+    width: 14.285%;
+    text-align: center;
+    border-right: 1px solid #f3f3f3;
+}
+.note-week-list>li:last-child{
+    border-right: 0px;
+}
+.note-radius-group>.note-radius:nth-child(1)>span:nth-child(1){
+    color: #00c4ff;
+    font-size: 2em;
+}
+.note-radius-group>.note-radius:nth-child(2)>span:nth-child(1){
+    color: #ff1313;
+    font-size: 2em;
+}
+.note-radius-group>.note-radius:nth-child(3)>span:nth-child(1){
+    color: #5bd45b;
+    font-size: 2em;
+}
+.note-radius-group>.note-radius>span:nth-child(2){
+    position: relative;
+    top: -2px;
+}
+.note-week-list>li>p{
+    margin-bottom: 0px;
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+}
+.note-day-list {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 82px;
+    background: #fff;
+    border-bottom: 1px solid #f3f3f3;
+    line-height: 25px;
+    display: inline-flex;
+}
+.note-day-list>li>p:nth-child(1){
+    margin-bottom: 0px;
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.note-day-list>li {
+    width: 14.285%;
+    text-align: center;
+    border-right: 1px solid #f3f3f3;
+    display: inline-block;
+}
+.note-day-list>li:last-child{
+    border-right: 0px;
+}
+.note-tips-full,.note-tips-yet{
+    font-size: 12px;
+    text-align: left;
+    background: #f7f8fc;
+    padding-left: 8px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+.note-tips-full{
+    border-left: 3px solid #5bd45b;
+}
+.note-tips-yet{
+    border-left: 3px solid #ff1313;
+}
+.note-nowday-doublechar{
+    background: #00c4ff;
+    border-radius: 15px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: #fff;
+}
+.note-nowday-char{
+    background: #00c4ff;
+    border-radius: 15px;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    color: #fff;
+}
+
